@@ -1,8 +1,8 @@
-package com.thetestacademy;
+package com.thetestingacademy.ex01_RA_basic;
 
 import io.restassured.RestAssured;
 
-public class Lab01_RESTAssured {
+public class APITesting_RESTAssured_basic01 {
     public static void main(String[] args) {
 
         RestAssured.given()
