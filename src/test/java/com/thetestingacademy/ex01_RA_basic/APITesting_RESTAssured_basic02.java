@@ -17,12 +17,12 @@ public class APITesting_RESTAssured_basic02 {
 
         Scanner scanner= new Scanner(System.in);
         System.out.println("Enter the pincode!");
-        String pincode =  scanner.next();
+        String pinCode =  scanner.next();
 
         RestAssured
                 .given()
                 .baseUri("https://api.zippopotam.us")
-                .basePath("/IN/"+ pincode)
+                .basePath("/IN/"+ pinCode)
                 .when()
                 .get()
                 .then().log().all()
