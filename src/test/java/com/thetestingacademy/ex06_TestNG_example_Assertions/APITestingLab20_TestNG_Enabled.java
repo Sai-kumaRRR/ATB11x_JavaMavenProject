@@ -1,4 +1,4 @@
-package com.thetestingacademy.ex06_TestNGexamples_TestNGAllureReport;
+package com.thetestingacademy.ex06_TestNG_example_Assertions;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

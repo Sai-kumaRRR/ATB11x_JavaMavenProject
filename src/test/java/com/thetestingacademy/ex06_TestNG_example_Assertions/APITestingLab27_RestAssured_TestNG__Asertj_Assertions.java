@@ -1,4 +1,4 @@
-package com.thetestingacademy.ex06_TestNGexamples_TestNGAllureReport;
+package com.thetestingacademy.ex06_TestNG_example_Assertions;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -12,7 +12,7 @@ import io.restassured.specification.RequestSpecification;
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
-public class APITestingLab25_RestAssured_Assertions {
+public class APITestingLab27_RestAssured_TestNG__Asertj_Assertions {
 
     RequestSpecification requestSpecification;
     Response response;
@@ -20,10 +20,6 @@ public class APITestingLab25_RestAssured_Assertions {
     String token;
     Integer bookingID;
 
-
-    @Owner("Sai")
-    @Severity(SeverityLevel.CRITICAL)
-    @Description("TC#1 - Verify that the create booking is writing fine booking post request.")
 
     @Test
     public void test_createBooking_POST() {
@@ -35,14 +31,14 @@ public class APITestingLab25_RestAssured_Assertions {
                 "\totalprice\": 111,\n" +
                 "\"depositpaid\" : true,\n" +
                 "\"bookingdates\" :{\n" +
-                "\"checkin\": \"2018-01-01\",\n" +
-                "\"checkout\" : \"2019-01-01\"\n" +
+                "\"checkin\": \"2024-01-01\",\n" +
+                "\"checkout\" : \"2024-01-01\"\n" +
                 "},\n" +
                 " \"additionalneeds\" : \"Breakfast\"\n" +
                 "}";
 
         requestSpecification = RestAssured.given();
-        requestSpecification.baseUri("https://restful-booker.herokuapp.com");
+        requestSpecification.baseUri("https://restful-booker.herokuapp.com/");
         requestSpecification.basePath("/booking");
         requestSpecification.contentType(ContentType.JSON);
         requestSpecification.body(payload).log().all();
@@ -61,10 +57,12 @@ public class APITestingLab25_RestAssured_Assertions {
 
         validatableResponse.body("booking.firstname", Matchers.equalTo("Sai"));
         validatableResponse.body("booking.firstname", Matchers.equalTo("Brown"));
-        validatableResponse.body("booking.depositpaid", Matchers.equalTo(false));
+        validatableResponse.body("booking.depositpaid", Matchers.equalTo(true));
         validatableResponse.body("bookingid", Matchers.notNullValue());
+
+
+
+        // TestNG - Extract the details of the firstname , bookingid , lastname from
+        // bookingid = response.then().extract().path("bookingid");
     }
-
-
 }
-

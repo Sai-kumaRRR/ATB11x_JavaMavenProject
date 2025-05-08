@@ -3,9 +3,8 @@
 <suite name="pincode verification Project">
     <test verbose="2" preserve-order="true" name="ATB11xJavaMavenProject">
 
-        <parameter name="browser" value="firefox"></parameter>
         <classes>
-            <class name="com.thetestingacademy.ex06_TestNGexamples_TestNGAllureReport.APITestingLab25_RestAssured_Assertions">
+            <class name="com.thetestingacademy.ex06_TestNG_example_Assertions.APITestingLab25_RestAssured_Assertions">
             </class>
         </classes>
     </test>
