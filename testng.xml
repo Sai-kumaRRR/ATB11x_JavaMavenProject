@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/alamu/IdeaProjects/ATB11xJavaMavenProject"><classes><class name="com.thetestingacademy.ex03_TestNGAllureReport.APITesting_Lab06_TestCase"><methods><include name="test_GET_POSITIVE_TC1"/><include name="test_GET_Negative_TC2"/><include name="test_GET_NEGATIVE_TC3"/></methods></class><class name="com.thetestingacademy.ex03_TestNGAllureReport.APITesting_Lab07TestCase"><methods><include name="test_GET_POSITIVE_TC1"/><include name="test_GET_Negative_TC2"/><include name="test_GET_NEGATIVE_TC3"/></methods></class><class name="com.thetestingacademy.ex04_RestAssuredHTTP_Method.GET.APITestingLab08_GETBDDStyle"><methods><include name="test_GET_positive"/></methods></class><class name="com.thetestingacademy.ex04_RestAssuredHTTP_Method.GET.APITesting_Lab09_GETnoBDDStyle"><methods><include name="test_GET_NonBDD_Positive"/><include name="test_GET_NonBDD_Negative"/></methods></class><class name="com.thetestingacademy.ex05_TestNGexamples.APITestingLab18_DependsofMethods"><methods><include name="serverstartedok"/><include name="test1"/><include name="test2"/></methods></class><class name="com.thetestingacademy.ex05_TestNGexamples.APITesting_Lab15_BeforeTestcase"><methods><include name="test_PUT"/></methods></class><class name="com.thetestingacademy.ex05_TestNGexamples.APITesting_Lab16TestNGPriority"><methods><include name="t1"/><include name="t2"/><include name="t3"/><include name="t4"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="ATB11xJavaMavenProject">
+        <classes>
+            <class name="com.thetestingacademy.ex03_TestNGAllureReport.APITesting_Lab06_TestCase">
+
+            </class>
+            <class name="com.thetestingacademy.ex03_TestNGAllureReport.APITesting_Lab07TestCase">
+
+            </class>
+            <class name="com.thetestingacademy.ex04_RestAssuredHTTP_Method.GET.APITestingLab08_GETBDDStyle">
+
+            </class>
+            <class name="com.thetestingacademy.ex04_RestAssuredHTTP_Method.GET.APITesting_Lab09_GETnoBDDStyle">
+
+        </class>
+            <class name="com.thetestingacademy.ex05_TestNGexamples.APITestingLab18_DependsofMethods">
+
+        </class>
+            <class name="com.thetestingacademy.ex05_TestNGexamples.APITesting_Lab15_BeforeTestcase">
+
+            </class>
+            <class name="com.thetestingacademy.ex05_TestNGexamples.APITesting_Lab16TestNGPriority">
+
+            </class>
+        </classes>
+    </test>
+</suite>

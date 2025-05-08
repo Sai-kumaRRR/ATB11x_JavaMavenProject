@@ -9,7 +9,7 @@ public class APITestingLab06MultiTestCaseExample02 {
         String pincode = "495004";
         RestAssured
                 .given()
-                .baseUri("https://api.postalpincode/495004")
+                .baseUri("https://api.postalpincode.in")
                 .basePath("/IN/" + pincode)
                 .when()
                 .get()
@@ -20,7 +20,7 @@ public class APITestingLab06MultiTestCaseExample02 {
         pincode = "@";
         RestAssured
                 .given()
-                .baseUri("https://api.postalpincode/495004")
+                .baseUri("https://api.postalpincode.in")
                 .basePath("/IN/" + pincode)
                 .when()
                 .get()
@@ -30,7 +30,7 @@ public class APITestingLab06MultiTestCaseExample02 {
         pincode = " ";
         RestAssured
                 .given()
-                .baseUri("https://api.zippopotam.us")
+                .baseUri("https://api.postalpincode.in")
                 .basePath("/USA/" + pincode)
                 .when()
                 .get()

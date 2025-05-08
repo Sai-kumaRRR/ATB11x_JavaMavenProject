@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/alamu/IdeaProjects/ATB11xJavaMavenProject/testng.xml">
-        <classes/>
+    <test verbose="2" preserve-order="true" name="ATB11xJavaMavenProject/testng.xml">
+        <classes>
+            <class name="com.thetestingacademy.ex03_TestNGAllureReport.APITesting_Lab07TestCase">
+
+            </class>
+
+        </classes>
     </test>
 </suite>

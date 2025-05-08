@@ -21,7 +21,7 @@ public class APITesting_Lab06_TestCase {
     }
 
     @Test
-    public void test_GET_Negative_TC2() {
+    public void test_GET_NEGATIVE_TC2() {
         pincode = "@";
         RestAssured
                 .given()
