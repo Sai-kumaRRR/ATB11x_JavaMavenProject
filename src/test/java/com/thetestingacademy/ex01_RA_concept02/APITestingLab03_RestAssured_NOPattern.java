@@ -1,6 +1,6 @@
 package com.thetestingacademy.ex01_RA_concept02;
 
-public class APITestingLab03_RestAssured {
+public class APITestingLab03_RestAssured_NOPattern {
 
 
     // NoDesignPattern
@@ -20,7 +20,7 @@ public class APITestingLab03_RestAssured {
     }
 
     public static void main(String[] args) {
-        APITestingLab03_RestAssured np = new APITestingLab03_RestAssured();
+        APITestingLab03_RestAssured_NOPattern np = new APITestingLab03_RestAssured_NOPattern();
         np.step1();
         np.step2();
         np.step3("Sai");
