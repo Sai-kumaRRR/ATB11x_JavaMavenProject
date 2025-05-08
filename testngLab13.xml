@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="pincode verification Project">
+    <test verbose="2" preserve-order="true" name="ATB11xJavaMavenProject">
+        <classes>
+            <class name="com.thetestingacademy.ex03_TestNGAllureReport.APITesting_Lab06_TestCase">
+            </class>
+        </classes>
+    </test>
+</suite>
