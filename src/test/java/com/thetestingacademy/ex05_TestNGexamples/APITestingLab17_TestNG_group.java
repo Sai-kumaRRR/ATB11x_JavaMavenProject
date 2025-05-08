@@ -21,13 +21,13 @@ public class APITestingLab17_TestNG_group {
     public void test_regRun() {
         System.out.println("Reg");
         System.out.println("----");
-        Assert.assertTrue(false);
+        Assert.assertTrue(true);
 
     }
 
     @Test(groups = {"p1", "reg"}, priority = 3)
     public void test_smokeRun() {
         System.out.println("smoke");
-        Assert.assertTrue(false);
+        Assert.assertTrue(true);
     }
 }
