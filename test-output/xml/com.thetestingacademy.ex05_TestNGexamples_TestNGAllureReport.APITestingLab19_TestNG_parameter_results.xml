@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ATB11xJavaMavenProject"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.128">
+    <properties></properties>
+
+
+
+            <testcase
+                name="demo1"
+                time="0.128"
+                classname="com.thetestingacademy.ex06_TestNGexamples_TestNGAllureReport.APITestingLab19_TestNG_parameter">
+            </testcase>
+</testsuite>
