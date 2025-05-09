@@ -7,7 +7,10 @@ import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.hamcrest.Matchers;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class APITestingLab27_RestAssured_TestNG__Asertj_Assertions {
 
@@ -59,7 +62,28 @@ public class APITestingLab27_RestAssured_TestNG__Asertj_Assertions {
 
 
 
-        // TestNG - Extract the details of the firstname , bookingid , lastname from
-        // bookingid = response.then().extract().path("bookingid");
+        // TestNG - Extract the details of the firstname , bookingid , lastname from response
+        bookingID = response.then().extract().path("bookingid");
+        String firstname = response.then().extract().path("booking.firstname");
+        String lastname = response.then().extract().path("booking.lastname");
+
+        // TestNG Assertions
+        //softAssert vs
+        //HardAssert -
+        // this means that if any assertion fails
+        // the remaining in that test method will not be executed
+
+        Assert.assertEquals(firstname,"Sai");
+        Assert.assertEquals(lastname,"Brown");
+        Assert.assertNotNull(bookingID);
+
+        // assertj(3rd - Lib to assertions)
+        assertThat(bookingID).isNotZero().isNull().isPositive();
+        assertThat(firstname).isEqualTo("Sai").isNotBlank().isNotBlank().isNotEmpty().isAlpha();
+
+        // String s = ""; // empty
+        // String s2 = " "; // Blank
     }
+
+
 }
