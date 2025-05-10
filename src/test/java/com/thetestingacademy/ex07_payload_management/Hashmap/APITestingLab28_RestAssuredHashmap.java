@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class APITestingLab28_RestAssuredHashmap {
 
@@ -20,7 +21,7 @@ public class APITestingLab28_RestAssuredHashmap {
     Integer bookingId;
 
     @Test
-    public void test_createBooking_POST() {
+    public void test_POST() {
 
         // String payload
 
@@ -45,9 +46,17 @@ public class APITestingLab28_RestAssuredHashmap {
         jsonBodyUsingMap.put("despoitpaid", false);
 
 
+        Map<String, Object> bookingDatesMap = new LinkedHashMap();
+        bookingDatesMap.put("checkin","2018-01-01");
+        bookingDatesMap.put("checkout","2019-01-01");
 
+        jsonBodyUsingMap.put("bookingdates",bookingDatesMap);
+        jsonBodyUsingMap.put("additionalneeds","Breakfast");
+        System.out.println(jsonBodyUsingMap);
 
-
+        // Hashmap -> json->
+        // 1 .) gson
+        //2.) jackson API
 
 
 
@@ -74,20 +83,6 @@ public class APITestingLab28_RestAssuredHashmap {
         validatableResponse.body("booking.firstname", Matchers.equalTo("Brown"));
         validatableResponse.body("booking.depositpaid", Matchers.equalTo(true));
         validatableResponse.body("booking", Matchers.notNullValue());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
