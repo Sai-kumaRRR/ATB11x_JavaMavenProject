@@ -62,7 +62,7 @@ public class APITestingLab25_RestAssured_Assertions {
         validatableResponse.body("booking.firstname", Matchers.equalTo("Sai"));
         validatableResponse.body("booking.firstname", Matchers.equalTo("Brown"));
         validatableResponse.body("booking.depositpaid", Matchers.equalTo(true));
-        validatableResponse.body("bookingid", Matchers.notNullValue());
+        validatableResponse.body("booking", Matchers.notNullValue());
     }
 
 

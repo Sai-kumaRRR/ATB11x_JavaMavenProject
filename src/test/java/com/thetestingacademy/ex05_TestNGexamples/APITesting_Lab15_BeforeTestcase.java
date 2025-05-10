@@ -24,7 +24,7 @@ public class APITesting_Lab15_BeforeTestcase {
     }
     @Test
     public void test_PUT(){
-        //token and bookingid
+        //token and booking
         System.out.println("GET PUT REQUEST ");
 
     }

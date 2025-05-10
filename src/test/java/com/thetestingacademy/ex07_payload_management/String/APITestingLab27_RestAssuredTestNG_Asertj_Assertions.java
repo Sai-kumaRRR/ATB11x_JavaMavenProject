@@ -1,5 +1,4 @@
-package com.thetestingacademy.ex06_TestNG_example_Assertions;
-
+package com.thetestingacademy.ex07_payload_management.String;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -10,13 +9,13 @@ import org.hamcrest.Matchers;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class APITestingLab27_RestAssured_TestNG__Asertj_Assertions {
+public class APITestingLab27_RestAssuredTestNG_Asertj_Assertions {
 
     RequestSpecification requestSpecification;
     Response response;
     ValidatableResponse validatableResponse;
     String token;
-    Integer bookingId;
+    Integer bookingID;
 
 
     @Test
@@ -60,7 +59,7 @@ public class APITestingLab27_RestAssured_TestNG__Asertj_Assertions {
 
 
         // TestNG - Extract the details of the firstname , booking , lastname from response
-        bookingId = response.then().extract().path("booking");
+        bookingID = response.then().extract().path("booking");
         String firstname = response.then().extract().path("booking.firstname");
         String lastname = response.then().extract().path("booking.lastname");
 
@@ -72,19 +71,14 @@ public class APITestingLab27_RestAssured_TestNG__Asertj_Assertions {
 
         Assert.assertEquals(firstname, "Sai");
         Assert.assertEquals(lastname, "Brown");
-        Assert.assertNotNull(bookingId);
+        Assert.assertNotNull(bookingID);
 
         // assertj(3rd - Lib to assertions)
 
-        assertThat(bookingId).isNotZero().isNull().isPositive();
+        assertThat(bookingID).isNotZero().isNull().isPositive();
         assertThat(firstname).isEqualTo("Sai").isNotBlank().isNotBlank().isNotEmpty().isAlpha();
 
         // String s = ""; // empty
         // String s2 = " "; // Blank
     }
-
-
 }
-
-
-
