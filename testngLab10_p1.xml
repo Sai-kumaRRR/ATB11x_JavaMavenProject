@@ -8,6 +8,7 @@
                 <include name="p1">
 
                 </include>
+                <exclude name="sanity"></exclude>
 
 
             </run>

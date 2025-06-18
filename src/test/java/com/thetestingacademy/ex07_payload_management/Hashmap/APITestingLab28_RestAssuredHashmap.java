@@ -65,7 +65,8 @@ public class APITestingLab28_RestAssuredHashmap {
         requestSpecification.baseUri("https://restful-booker.herokuapp.com/");
         requestSpecification.basePath("/booking");
         requestSpecification.contentType(ContentType.JSON);
-        requestSpecification.body(payload).log().all();
+
+        requestSpecification.body(validatableResponse).log().all();
 
 
         Response response = requestSpecification.when().post();

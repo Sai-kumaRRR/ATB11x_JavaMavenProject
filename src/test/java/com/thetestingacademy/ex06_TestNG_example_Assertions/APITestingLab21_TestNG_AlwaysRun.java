@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class APITestingLab21_TestNG_AlwaysRun {
+
     @Test
     public void test_register() {
         Assert.assertTrue(true);

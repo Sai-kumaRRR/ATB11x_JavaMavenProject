@@ -40,7 +40,7 @@ public class APITestingLab10_POSTnoBDDStyle {
 
         System.out.println(" ---- part3 ----");
 
-        // verfication part -> 3
+        // verification part -> 3
         vr = response.then().log().all();
         vr.statusCode(200);
 

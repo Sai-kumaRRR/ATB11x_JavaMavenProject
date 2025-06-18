@@ -12,9 +12,10 @@ public class APITestingLab20_TestNG_Enabled {
 
     }
 
-    @Test
+    @Test(enabled = false)
     public void test02() {
         Assert.assertTrue(true);
+
     }
 
     @Test
