@@ -3,7 +3,7 @@
   <component name="SonarLintProjectSettings">
     <option name="moduleMapping">
       <map>
-        <entry key="ATB11xAPI Automation" value="ATB11xJavaMavenProject" />
+        <entry key="ATB11xAPI Automation program" value="ATB11xJavaMavenProject" />
       </map>
     </option>
   </component>

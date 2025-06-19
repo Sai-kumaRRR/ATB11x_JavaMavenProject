@@ -24,7 +24,7 @@ public class APITestingLab25_RestAssured_Assertions {
 
     @Owner("SAI")
     @Severity(SeverityLevel.CRITICAL)
-    @Description()
+    @Description( )
     @Test
     public void test_createBooking_POST() {
 
@@ -50,7 +50,7 @@ public class APITestingLab25_RestAssured_Assertions {
 
         Response response = requestSpecification.when().post();
 
-        //GET validatable response to perform validation
+        //GET validate response to perform validation
         validatableResponse = response.then().log().all();
 
         //Rest assured
@@ -61,7 +61,7 @@ public class APITestingLab25_RestAssured_Assertions {
 
         validatableResponse.body("booking.firstname", Matchers.equalTo("Sai"));
         validatableResponse.body("booking.firstname", Matchers.equalTo("Brown"));
-        validatableResponse.body("booking.depositpaid", Matchers.equalTo(true));
+        validatableResponse.body("booking.deposit paid", Matchers.equalTo(true));
         validatableResponse.body("booking", Matchers.notNullValue());
     }
 

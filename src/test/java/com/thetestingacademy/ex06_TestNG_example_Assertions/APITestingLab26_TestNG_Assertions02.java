@@ -9,7 +9,7 @@ public class APITestingLab26_TestNG_Assertions02 {
     @Test(enabled = false)
     public void test_hardAssertionExamples(){
         System.out.println("Start of the program");
-        Boolean is_sonu = false;
+        Boolean is_Sonu = false;
         Assert.assertEquals("sai", "Sai");
         System.out.println("End of the program");
 
